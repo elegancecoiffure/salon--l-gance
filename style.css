@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdf6fb;
+  color: #333;
+  padding-bottom: 140px; /* pour ne pas masquer le contenu par le footer fixe */
+}
+
+header {
+  background-color: #8a3e9d;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+}
+
+.slogan {
+  font-style: italic;
+  font-size: 1rem;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+}
+
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  padding: 3rem 2rem;
+  background: url('https://source.unsplash.com/1600x600/?hair,salon') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  background-attachment: fixed;
+}
+
+.btn {
+  background-color: #ff91c1;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 1rem;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ff64a6;
+}
+
+.services,
+.contact,
+.galerie {
+  padding: 2rem;
+  text-align: center;
+}
+
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.gallery-grid img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer-logo {
+  display: block;
+  margin: 0 auto 0.5rem auto;
+  height: 50px;
+}
