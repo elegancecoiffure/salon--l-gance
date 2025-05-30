@@ -1,99 +1,58 @@
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #fdf6fb;
-  color: #333;
-  padding-bottom: 140px; /* pour ne pas masquer le contenu par le footer fixe */
-}
-
-header {
-  background-color: #8a3e9d;
-  padding: 1rem;
+/* Jeux de lumière */
+.lumiere {
+  background: linear-gradient(270deg, #ffb6c1, #ffe4e1, #ffb6c1);
+  background-size: 600% 600%;
+  animation: lumiereAnim 10s ease infinite;
+  color: #fff;
+  padding: 20px;
   text-align: center;
-  color: white;
 }
 
-.slogan {
-  font-style: italic;
-  font-size: 1rem;
-  margin-top: -0.5rem;
-  margin-bottom: 1rem;
+@keyframes lumiereAnim {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
-nav a {
-  margin: 0 15px;
-  color: white;
+/* Sticky menu */
+.menu-sticky {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.menu-sticky a {
+  color: #333;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s;
 }
 
-.hero {
-  padding: 3rem 2rem;
-  background: url('https://source.unsplash.com/1600x600/?hair,salon') center/cover no-repeat;
-  color: white;
-  text-align: center;
-  background-attachment: fixed;
+.menu-sticky a:hover {
+  color: #d63384;
 }
 
-.btn {
-  background-color: #ff91c1;
-  color: white;
-  padding: 12px 25px;
-  font-size: 1.1rem;
-  text-decoration: none;
-  border-radius: 8px;
-  margin-top: 1rem;
-  display: inline-block;
-  transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #ff64a6;
-}
-
-.services,
-.contact,
-.galerie {
-  padding: 2rem;
-  text-align: center;
-}
-
+/* Galerie cliquable */
 .gallery-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+  padding: 10px;
 }
 
 .gallery-grid img {
-  width: 300px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  border-radius: 8px;
   transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .gallery-grid img:hover {
   transform: scale(1.05);
-}
-
-footer {
-  background-color: #222;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
-}
-
-.footer-logo {
-  display: block;
-  margin: 0 auto 0.5rem auto;
-  height: 50px;
 }
