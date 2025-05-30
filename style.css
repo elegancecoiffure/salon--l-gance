@@ -13,6 +13,21 @@
   100% { background-position: 0% 50%; }
 }
 
+/* Pied de page réduit */
+footer.lumiere {
+  padding: 10px 15px;
+  font-size: 0.9em;
+  background: linear-gradient(270deg, #ffb6c1, #ffe4e1, #ffb6c1);
+  background-size: 600% 600%;
+  animation: lumiereAnim 10s ease infinite;
+  text-align: center;
+  color: #fff;
+}
+.footer-logo {
+  max-height: 50px;
+  margin-bottom: 5px;
+}
+
 /* Menu sticky */
 .menu-sticky {
   position: sticky;
@@ -105,8 +120,8 @@
   padding: 10px;
 }
 .gallery-grid img {
-  width: 50%;
-  border-radius: 4px;
+  width: 100%;
+  border-radius: 8px;
   transition: transform 0.3s ease;
   cursor: pointer;
 }
