@@ -5,12 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Salon Élégance</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js" defer></script>
 </head>
 <body>
-  <header>
+  <header class="lumiere">
     <h1>Salon Élégance</h1>
     <p class="slogan">Révélez votre beauté naturelle avec élégance.</p>
-    <nav>
+    <nav class="menu-sticky">
       <a href="#">Accueil</a>
       <a href="#services">Services</a>
       <a href="#galerie">Galerie</a>
@@ -38,26 +40,26 @@
     <section id="galerie" class="galerie">
       <h3>Galerie</h3>
       <div class="gallery-grid">
-        <img src="IMG-20250530-WA0017.jpg" alt="Coiffure élégante 1">
-        <img src="coif 6.png" alt="Mèches élégantes 2">
-        <img src="coif 4.png" alt="Coiffure mariage 3">
-        <img src="IMG-20250530-WA0018" alt="Salon de beauté 4">
-        <img src="coif 5.png" alt="Look tendance 5">
-        <img src="IMG-20250530-WA0014.jpg" alt="Coiffure de mariée 6">
-        <img src="coif 4.png" alt="Beauté naturelle 7">
-        <img src="https://source.unsplash.com/307x200/?hair,style" alt="Style moderne 8">
+        <a href="IMG-20250530-WA0017.jpg" data-lightbox="galerie" data-title="Coiffure élégante"><img src="IMG-20250530-WA0017.jpg" alt="Coiffure élégante 1"></a>
+        <a href="coif 6.png" data-lightbox="galerie" data-title="Mèches élégantes"><img src="coif 6.png" alt="Mèches élégantes 2"></a>
+        <a href="coif 4.png" data-lightbox="galerie" data-title="Coiffure mariage"><img src="coif 4.png" alt="Coiffure mariage 3"></a>
+        <a href="IMG-20250530-WA0018" data-lightbox="galerie" data-title="Salon de beauté"><img src="IMG-20250530-WA0018" alt="Salon de beauté 4"></a>
+        <a href="coif 5.png" data-lightbox="galerie" data-title="Look tendance"><img src="coif 5.png" alt="Look tendance 5"></a>
+        <a href="IMG-20250530-WA0014.jpg" data-lightbox="galerie" data-title="Coiffure de mariée"><img src="IMG-20250530-WA0014.jpg" alt="Coiffure de mariée 6"></a>
+        <a href="coif 4.png" data-lightbox="galerie" data-title="Beauté naturelle"><img src="coif 4.png" alt="Beauté naturelle 7"></a>
+        <a href="https://source.unsplash.com/1024x768/?hair,style" data-lightbox="galerie" data-title="Style moderne"><img src="https://source.unsplash.com/307x200/?hair,style" alt="Style moderne 8"></a>
       </div>
     </section>
 
     <section id="contact" class="contact">
       <h3>Contact</h3>
-      <p>📞 Téléphone : <a href="tel:+33123456789">+1 (708) 632-0779</a></p>
-      <p>📧 Email : <a href="mailto:contact@salon-elegance.fr">saecoiffure@gmail.com</a></p>
-      <p>📍 Adresse : 1242 mackinaw av calumet city IL 60409</p>
+      <p>📞 Téléphone : <a href="tel:+17086320779">+1 (708) 632-0779</a></p>
+      <p>📧 Email : <a href="mailto:saecoiffure@gmail.com">saecoiffure@gmail.com</a></p>
+      <p>📍 Adresse : 1242 Mackinaw Ave, Calumet City, IL 60409</p>
     </section>
   </main>
 
-  <footer>
+  <footer class="lumiere">
     <img src="logo salon.png" alt="Logo NA" class="footer-logo" />
     <p>&copy; 2025 Salon Élégance - Tous droits réservés.</p>
   </footer>
