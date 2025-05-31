@@ -1,3 +1,9 @@
+/* Général */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 /* Jeux de lumière */
 .lumiere {
   background: linear-gradient(270deg, #ffb6c1, #ffe4e1, #ffb6c1);
@@ -35,7 +41,7 @@
   color: #d63384;
 }
 
-/* Zone héros avec fond dégradé */
+/* Zone héros */
 .hero-zone {
   background: linear-gradient(135deg, #ffe4e1, #f8cdda);
   padding: 60px 20px;
@@ -67,7 +73,7 @@
   transform: scale(1.05);
 }
 
-/* Zone services */
+/* Services */
 .services-zone {
   background: linear-gradient(135deg, #fff0f5, #ffe4e1);
   padding: 50px 20px;
@@ -97,7 +103,7 @@
   background-color: #fdf2f8;
 }
 
-/* Galerie cliquable */
+/* Galerie */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -112,4 +118,64 @@
 }
 .gallery-grid img:hover {
   transform: scale(1.05);
+}
+
+/* Pied de page */
+.footer-logo {
+  max-width: 150px;
+  height: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .menu-sticky {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .hero-zone h2 {
+    font-size: 2em;
+  }
+
+  .hero-zone p {
+    font-size: 1em;
+  }
+
+  .btn-reserver {
+    padding: 10px 20px;
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 600px) {
+  .services-zone h3 {
+    font-size: 1.5em;
+  }
+
+  .service-item {
+    font-size: 1em;
+    padding: 15px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footer-logo {
+    width: 120px;
+  }
+
+  footer p {
+    font-size: 0.9em;
+  }
+
+  main {
+    padding: 0 10px;
+  }
 }
